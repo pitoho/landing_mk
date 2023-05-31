@@ -68,7 +68,7 @@ button{
         margin: 20px;
     }
     .square{
-        width: 500px;
+        width: 100vw;
         height: 650px;
     }
     .cards{
