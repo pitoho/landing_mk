@@ -41,8 +41,12 @@ button{
     height: 300px;
     margin: 20px;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
     background-color: #4e89ae;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 .square{
     position: absolute;
@@ -51,4 +55,29 @@ button{
     height: 100vh;
     margin-top: 60px;
     z-index: -1;
+}
+
+@media(max-width: 500px){
+   .main_img{
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    img{
+        width: 400px;
+        margin: 20px;
+    }
+    .square{
+        width: 500px;
+        height: 650px;
+    }
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 350px;
+    }
+    
 }
